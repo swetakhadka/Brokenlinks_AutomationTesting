@@ -89,7 +89,6 @@ for index, image in enumerate(banners):
 print("checking that there is broken links or not ")
 
 links = driver.find_elements(By.TAG_NAME, "a")
-print(links)
 for index, link in enumerate(links):
     link_url = link.get_attribute("href")
     if link_url:
