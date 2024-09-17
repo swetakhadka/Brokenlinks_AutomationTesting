@@ -8,8 +8,6 @@ from selenium.webdriver.support.ui import WebDriverWait
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.common.exceptions import ElementClickInterceptedException, StaleElementReferenceException
 
-
-
 def check_url_status(url):
     try:
         response = requests.head(url, timeout=5)  # HEAD request to get just the status code
