@@ -39,7 +39,6 @@ banners = driver.find_elements(By.TAG_NAME, "img")
 
 print(f"Found {len(banners)} total images")
 
-# Loop through the images and click them one by one
 for img_index in range(len(banners)):
     try:
         # Refetch images to avoid stale element reference
